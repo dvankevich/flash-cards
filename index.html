@@ -7,11 +7,39 @@
   <title>simple flash cards</title>
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2'><circle cx='1' cy='1' r='1' fill='tomato'/></svg>" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-  <h1>Simple flash cards</h1>
+  <section class="question-form">
+    <h1>Simple flash cards</h1>
 
+    <form>
+      <div class="input-group">
+        <label for="question-num">question number</label>
+        <input id="question-num" type="number">
+      </div>
+
+      <div class="input-group">
+        <label for="question">Question</label>
+        <input id="question" type="text">
+      </div>
+
+
+      <div class="input-group">
+        <label for="answer">Answer</label>
+        <textarea id="answer" name="answer" rows="10" cols="40"></textarea>
+      </div>
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div class="results">
+    <h2>Form Data</h2>
+    <pre></pre>
+  </div>
 
   <script type="module" src="js/script.js"></script>
 </body>
